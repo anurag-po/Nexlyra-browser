@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <div class="drag-region"></div>
+        
+        <div class="nav-left">
+            <span class="app-brand">Nexlyra</span>
+            <button id="btn-back" title="Go Back">←</button>
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="url-bar" placeholder="Search or type a URL" autofocus>
+        </div>
+
+        <div class="nav-right">
+            <button id="btn-settings" title="Settings">⚙️</button>
+            <button id="btn-theme" title="Toggle Theme">🌙</button>
+            
+            <div class="divider"></div>
+            
+            <button id="min-btn" class="win-btn">─</button>
+            <button id="max-btn" class="win-btn">□</button>
+            <button id="close-btn" class="win-btn bad">✕</button>
+        </div>
+    </div>
+
+    <div id="suggestions" class="hidden"></div>
+
+    <div id="homepage">
+        <div class="center-content">
+            <h1>Where to?</h1>
+            <input type="text" id="center-input" placeholder="Search the web...">
+        </div>
+    </div>
+
+    <webview id="view" src="about:blank" autosize="on"></webview>
+
+    <div id="settings-modal" class="hidden">
+        <div class="settings-content">
+            <h2>Settings</h2>
+            <label>Default Search Engine</label>
+            <select id="setting-engine">
+                <option value="google">Google</option>
+                <option value="bing">Bing</option>
+                <option value="duckduckgo">DuckDuckGo</option>
+            </select>
+            <label>Default AI Engine</label>
+            <select id="setting-ai">
+                <option value="perplexity">Perplexity</option>
+                <option value="chatgpt">ChatGPT</option>
+            </select>
+            <button id="save-settings">Save & Close</button>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

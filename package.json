@@ -1,0 +1,28 @@
+{
+  "name": "nexlyra-browser",
+  "version": "1.0.0",
+  "description": "A keyboard-first AI browser",
+  "main": "main.js",
+  "author": "Your Name",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.nexlyra.browser",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "electron": "^39.2.7",
+    "electron-builder": "^24.13.3"
+  }
+}
