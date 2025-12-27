@@ -51,7 +51,7 @@ If you want to build Nexlyra from source or contribute:
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/nexlyra-browser.git](https://github.com/your-username/nexlyra-browser.git)
+    git clone [https://github.com/your-username/nexlyra-browser.git](https://github.com/anurag-po/nexlyra-browser.git)
     cd nexlyra-browser
     ```
 
